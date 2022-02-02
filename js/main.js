@@ -121,12 +121,13 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
+    pauseOnFocus: false,
 
     responsive: [
       {
         breakpoint: 576,
           settings: {
-          arrows: false,
+          // arrows: false,
           centerMode: true,
           slidesToShow: 1,
         }
@@ -145,6 +146,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
+    pauseOnFocus: false,
     asNavFor: '.js_products-info-slider',
 
     responsive: [
@@ -160,7 +162,7 @@ $(document).ready(function() {
       {
         breakpoint: 576,
         settings: {
-          arrows: false,
+          // arrows: false,
           centerMode: true,
           slidesToShow: 1,
         }
@@ -180,7 +182,9 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: false,
+    pauseOnFocus: false,
     arrows: false,
+    asNavFor: '.js_products-slider',
   });
 
   
@@ -197,6 +201,7 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 6000,
       pauseOnHover: false,
+      pauseOnFocus: false,
     });  
   };
   headerSliderDark();
@@ -214,6 +219,7 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 6000,
       pauseOnHover: false,
+      pauseOnFocus: false,
     });  
   };
   
@@ -236,9 +242,9 @@ $(document).ready(function() {
 
 
 
-    modalTimer = setTimeout(() => {
-      annoyingModal.show();
-    }, 20000);
+    // modalTimer = setTimeout(() => {
+    //   annoyingModal.show();
+    // }, 20000);
 
 
   var headerInner = $('.header__top');
@@ -264,7 +270,6 @@ $(document).ready(function() {
 
 
   AOS.init({
-    // disable: 'mobile',
     offset: 200,
     duration: 800,
     once: true,
