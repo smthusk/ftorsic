@@ -9298,10 +9298,14 @@ a {
     background-size: 1.5em;
     z-index: 2; }
   .modal-content p {
-    text-align: center; }
+    text-align: center;
+    color: var(--text-secondary); }
     .modal-content p a {
       font-size: 15px;
-      text-decoration: underline; }
+      text-decoration: underline;
+      color: var(--text-secondary); }
+      .modal-content p a:hover {
+        color: var(--hover); }
 
 .successModal .modal-header {
   position: absolute;
