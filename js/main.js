@@ -110,7 +110,31 @@ $(document).ready(function() {
   });
   
 
-  $('.js_features-slider').slick({
+  $('.js_features-slider-d').slick({
+    infinite: true,
+    speed: 500,
+    centerMode: true,
+    centerPadding: '0',
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+
+    responsive: [
+      {
+        breakpoint: 576,
+          settings: {
+          // arrows: false,
+          centerMode: true,
+          slidesToShow: 1,
+        }
+      }
+    ]
+  });
+  $('.js_features-slider-l').slick({
     infinite: true,
     speed: 500,
     centerMode: true,
