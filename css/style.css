@@ -9399,9 +9399,17 @@ a {
     .modal-title--info {
       font-size: 40px; } }
 
+.modal-title--policy {
+  color: var(--white);
+  text-align: center;
+  font-size: 24px; }
+  @media (min-width: 992px) {
+    .modal-title--policy {
+      font-size: 40px; } }
+
 .modal-info .modal-info__text {
   color: var(--text-secondary);
-  text-align: center;
+  text-align: left;
   font-size: 18px; }
 
 .to-top {
